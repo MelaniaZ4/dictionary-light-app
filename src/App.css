@@ -13,7 +13,8 @@ main {
   max-width: 600px;
   background-color: bisque;
   margin: 0 auto;
+  padding-top: 20px;
   min-height: 400px;
   border-radius: 5px;
-  box-shadow: rgb(128, 105, 76);
+  text-align: center;
 }
