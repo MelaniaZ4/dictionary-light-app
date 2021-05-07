@@ -12,7 +12,7 @@ function App() {
           <Dictionary />
         </main>
         <footer>
-          Coded by Melanie Brandes
+          <a href="https://github.com/MelaniaZ4/dictionary-react-app.git">Open-source code</a> by Melanie Brandes
         </footer>
       </div>
     </div>
