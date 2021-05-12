@@ -1,4 +1,12 @@
-.dictionary-wrapper {
+.inputSection {
+  background: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  margin: 20px 0;
+}
+
+.dictionary {
   display: block;
   text-align: center;
 }

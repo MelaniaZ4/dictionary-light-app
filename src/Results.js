@@ -5,9 +5,9 @@ import Phonetics from "./Phonetics";
 export default function Results(props) {
 
     if (props.results){
-        console.log(props.results);
     return (
         <div>
+            <section>
             <h2>
                 {props.results.word}
             </h2>
@@ -20,11 +20,12 @@ export default function Results(props) {
                 );
                })}
             </h3> 
+            </section>
                 {props.results.meanings.map(function(meaning, index){
                 return (
-                    <div key={index}>
+                    <section key={index}>
                         <Meaning meaning={meaning} />
-                    </div>
+                    </section>
                 );
                })}
            </div>

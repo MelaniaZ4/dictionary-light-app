@@ -6,7 +6,8 @@ return (
         {props.phonetics.text}
         {" "}
         <a href={props.phonetics.audio}
-        target="_blank">
+        target="_blank"
+        rel="noreferrer">
             ▶ Listen
         </a>
     </div>

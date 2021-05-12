@@ -25,7 +25,8 @@ export default function Dictionary(){
     }
 
 return(
-    <div className="dictionary-wrapper">
+    <div className="dictionary">
+        <section className="inputSection">
         <form 
         onSubmit={Search}>
             <input 
@@ -36,6 +37,7 @@ return(
             onChange={handleKeywordValue}
             ></input>
         </form>
+        </section>
         <Results results={results}/>
     </div>
 );
