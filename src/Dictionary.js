@@ -43,7 +43,8 @@ return(
             type="search" 
             autoFocus={true} 
             placeholder="Type a word" 
-            className="search-bar" 
+            className="search-bar"
+            defaultValue="sunset"
             onChange={handleKeywordValue}
             ></input>
         </form>

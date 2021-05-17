@@ -5,9 +5,14 @@ h1 {
   color: rgb(97, 76, 51);
 }
 
+h2,
+h3 {
+  color: rgb(71, 56, 37);
+}
+
 main {
   color: rgb(97, 76, 51);
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
