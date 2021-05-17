@@ -1,17 +1,14 @@
-section {
-  max-width: 600px;
-  background-color: bisque;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
-}
-
 h1 {
   margin-top: 40px;
   margin-bottom: 20px;
   text-align: center;
+  color: rgb(97, 76, 51);
+}
+
+main {
+  color: rgb(97, 76, 51);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 footer {

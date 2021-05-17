@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Results from "./Results"
-import "./Dictionary";
+import "./Dictionary.css";
 
 export default function Dictionary(){
-    let [keyword, setkeyword] = useState("");
+    let [keyword, setkeyword] = useState("sunset");
     let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response){
         setResults(response.data[0]);
@@ -15,20 +16,29 @@ export default function Dictionary(){
         setkeyword(event.target.value);
     }
 
-    function Search(event){
-        event.preventDefault();
+    function search(){
         setkeyword();
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${keyword}`;
         console.log(apiUrl);
         axios.get(apiUrl).then(handleResponse);
-        
     }
 
+    function handleSubmit(event){
+        event.preventDefault();
+        search();
+    }
+
+    function load(){
+        setLoaded(true);
+        search();
+    }
+
+    if(loaded){
 return(
     <div className="dictionary">
         <section className="inputSection">
         <form 
-        onSubmit={Search}>
+        onSubmit={handleSubmit}>
             <input 
             type="search" 
             autoFocus={true} 
@@ -41,4 +51,8 @@ return(
         <Results results={results}/>
     </div>
 );
+} else {
+    load();
+    return "Loading...";
+}
 }

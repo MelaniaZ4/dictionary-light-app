@@ -1,17 +1,15 @@
 .inputSection {
-  background: white;
+  display: inline-block;
+  margin: 25px 0;
   padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
-  margin: 20px 0;
-}
-
-.dictionary {
-  display: block;
+  width: 100%;
   text-align: center;
 }
 
-form {
-  display: inline-block;
-  margin: auto;
+section {
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+  margin-bottom: 25px;
+  padding: 30px;
+  background-color: rgb(252, 241, 228);
 }
