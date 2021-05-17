@@ -4,8 +4,9 @@ import "./Synonyms.css";
 export default function Synonyms(props){
     if (props.synonyms) {
         return (
-            <div className="synonyms">
+            <div>
                 <h5>Synonyms</h5>
+                <div className="synonyms">
                 <ul>
                     {props.synonyms.map(function(synonym, index){
                     return (
@@ -15,6 +16,7 @@ export default function Synonyms(props){
                     );
                     })}
                 </ul>
+                </div>
             </div>
             );
     } else {

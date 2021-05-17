@@ -1,4 +1,12 @@
-ul {
-  list-style: none;
-  display: inline;
+li {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0px;
+  padding-right: 12px;
+}
+
+.synonyms {
+  margin: 0;
+  padding: 0;
 }

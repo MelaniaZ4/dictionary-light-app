@@ -1,0 +1,21 @@
+.listen {
+  border: 1px solid #614c33;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #614c33;
+  margin-left: 20px;
+}
+
+a:hover {
+  background: #614c33;
+  text-decoration: none;
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.phonetics-text {
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0.7;
+}
