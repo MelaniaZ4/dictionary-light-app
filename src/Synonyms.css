@@ -1,6 +1,13 @@
 li {
   display: inline-block;
-  padding-right: 12px;
+  padding-right: 13px;
   position: relative;
-  left: -40px;
+  left: 25px;
+  top: -42px;
+}
+
+.header {
+  font-weight: 600;
+  position: relative;
+  top: -18px;
 }
