@@ -28,7 +28,7 @@ export default function Dictionary() {
 		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_GB/${keyword}`;
 		axios.get(apiUrl).then(handleDictionaryResponse);
 
-        const pexelsApiKey = process.env.PEXELS_API_KEY;
+        const pexelsApiKey = process.env.REACT_APP_PEXELS_API_KEY;
 	    const pexelsApiUrl = "https://api.pexels.com/v1/search?query=sunset&per_page=9";
 		axios
 			.get(pexelsApiUrl, {
